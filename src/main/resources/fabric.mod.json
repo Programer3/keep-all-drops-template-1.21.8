@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "keepalldrops",
+	"version": "${version}",
+	"name": "Keep All Drops",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/keepalldrops/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.programer3.keepalldrops.KeepAllDrops"
+		],
+		"client": [
+			"io.github.programer3.keepalldrops.KeepAllDropsClient"
+		]
+	},
+	"mixins": [
+		"keepalldrops.mixins.json",
+		{
+			"config": "keepalldrops.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
