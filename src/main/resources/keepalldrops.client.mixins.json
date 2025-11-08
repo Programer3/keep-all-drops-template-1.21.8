@@ -1,0 +1,7 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "io.github.programer3.keepalldrops.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": []
+}
